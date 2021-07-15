@@ -2,6 +2,10 @@
   font-family: Manrope;
   src: url(fonts/Manrope-Regular.ttf);
 }
+@font-face {
+  font-family: Manrope-semibold;
+  src: url(fonts/Manrope-SemiBold.ttf);
+}
 body {
   font-family: Manrope;
   font-size: 13px;
@@ -20,7 +24,7 @@ main {
   background-color: white;
 }
 
-img {
+.drawers {
   width: 100%;
   border-radius: 10px 10px 0 0;
   height: 200px;
@@ -28,17 +32,50 @@ img {
   object-position: 0 20%;
 }
 
-.text {
-  padding: 30px;
+.text h1 {
+  font-family: Manrope-semibold;
+  font-size: 1.05rem;
+  padding: 30px 30px 0 30px;
+  margin: 0;
+}
+.text p {
+  font-size: 0.84rem;
+  padding: 15px 30px;
+  margin: 0;
+  line-height: 1.3rem;
 }
 
-h1 {
-  font-size: 1.2rem;
-  font-weight: bolder;
+.share {
+  display: none;
 }
 
-p {
-  font-size: 0.95rem;
+.profile {
+  border: solid black 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.profile .profile-main {
+  display: flex;
+  align-items: center;
+}
+.profile .profile-main .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.profile .profile-main h5 {
+  font-size: 0.84rem;
+  margin: 5px 20px;
+}
+.profile .profile-main p {
+  margin: 5px 20px;
+}
+.profile .share-button {
+  width: 20px;
+  background-color: #ecf2f8;
+  padding: 8.83px 7.5px;
 }
 
 .attribution {
