@@ -1,0 +1,73 @@
+// COLORS
+
+// - Very Dark Grayish Blue
+$vd-grayblue: hsl(217, 19%, 35%);
+// - Desaturated Dark Blue
+$darkblue: hsl(214, 17%, 51%);
+// - Grayish Blue
+$grayblue: hsl(212, 23%, 69%);
+// - Light Grayish Blue (background)
+$l-grayblue: hsl(210, 46%, 95%);
+
+// FONTS
+
+@font-face {
+    font-family: Manrope;
+    src: url(fonts/Manrope-Regular.ttf);
+}
+
+body {
+    font-family: Manrope;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 15% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $l-grayblue;
+    color: $vd-grayblue;
+}
+
+main {
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 20%;
+    
+}
+
+.text {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+p {
+    font-size: .95rem;
+}
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
