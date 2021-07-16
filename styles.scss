@@ -24,7 +24,7 @@ body {
     font-family: Manrope;
     font-size: 13px;
     font-weight: 500;
-    padding: 15% 5%;
+    padding: 15% 7% 10% 7%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -64,15 +64,41 @@ main {
 }
 
 .share {
-    display: none;
-}
-
-.profile {
-    border: solid black 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 11px 30px;
+    background-color: $vd-grayblue;
+    border-radius: 0 0 10px 10px;
+    color: $grayblue;
+    letter-spacing: 5px;
+
+    .share-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p, img {
+            padding-right: 10px;
+        }
+    }
+
+    .share-button {
+        background-color: $darkblue;
+        padding: 7.7px 8.5px;
+        border-radius: 17.5px;
+
+        img {
+            width: 18px;
+        }
+    }
+}
+
+.profile {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 15px 30px;
 
     .profile-main {
         display: flex;
@@ -96,24 +122,20 @@ main {
     }
 
     .share-button {
-        width: 20px;
         background-color: $l-grayblue;
-        padding: 8.83px 7.5px;
-        // border-radius: 10px;
+        padding: 7.7px 8.5px;
+        border-radius: 17.5px;
+
+        img {
+            width: 18px;
+        }
     }
 }
-
-
-
-
-
-
-
-
 
 .attribution { 
     font-size: 11px;
     text-align: center;
+    margin-top: 20px;
 
 }
 .attribution a {

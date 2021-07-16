@@ -10,7 +10,7 @@ body {
   font-family: Manrope;
   font-size: 13px;
   font-weight: 500;
-  padding: 15% 5%;
+  padding: 15% 7% 10% 7%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -46,15 +46,37 @@ main {
 }
 
 .share {
-  display: none;
-}
-
-.profile {
-  border: solid black 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 11px 30px;
+  background-color: #48556a;
+  border-radius: 0 0 10px 10px;
+  color: #9eafc2;
+  letter-spacing: 5px;
+}
+.share .share-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.share .share-icons p, .share .share-icons img {
+  padding-right: 10px;
+}
+.share .share-button {
+  background-color: #6d7f97;
+  padding: 7.7px 8.5px;
+  border-radius: 17.5px;
+}
+.share .share-button img {
+  width: 18px;
+}
+
+.profile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 15px 30px;
 }
 .profile .profile-main {
   display: flex;
@@ -73,14 +95,18 @@ main {
   margin: 5px 20px;
 }
 .profile .share-button {
-  width: 20px;
   background-color: #ecf2f8;
-  padding: 8.83px 7.5px;
+  padding: 7.7px 8.5px;
+  border-radius: 17.5px;
+}
+.profile .share-button img {
+  width: 18px;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .attribution a {
