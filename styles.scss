@@ -50,7 +50,7 @@ main {
 .text {
     h1 {
         font-family: Manrope-semibold;
-        font-size: 1.05rem;
+        font-size: .95rem;
         padding: 30px 30px 0 30px;
         margin: 0;
     }
@@ -64,7 +64,7 @@ main {
 }
 
 .share {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding: 11px 30px;
@@ -72,6 +72,7 @@ main {
     border-radius: 0 0 10px 10px;
     color: $grayblue;
     letter-spacing: 5px;
+    min-height: 51px;
 
     .share-icons {
         display: flex;
@@ -94,11 +95,13 @@ main {
     }
 }
 
-.profile {
-    display: none;
+.profile { 
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px 15px 30px;
+    padding: 11px 30px 11px 30px;
+    transition: all, .5s;
+    max-height: 100px;
 
     .profile-main {
         display: flex;
@@ -140,4 +143,26 @@ main {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 630px)  {
+
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    .drawers {
+        border-radius: 10px 0 0 10px;
+        height: 50%;
+    }
+
+    
 }
