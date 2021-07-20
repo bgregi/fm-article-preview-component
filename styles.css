@@ -126,12 +126,36 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 680px;
+    height: 270px;
   }
 
   .drawers {
     border-radius: 10px 0 0 10px;
-    height: 50%;
+    height: 270px;
+    width: 270px;
+    object-position: 0 10%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .text h1 {
+    font-size: 1.1rem;
+    padding: 0 0 20px 0;
+  }
+  .text p {
+    padding: 0;
+  }
+
+  .profile {
+    padding: 0;
+  }
+  .profile .share-button {
+    padding: 7.7px 8.5px;
   }
 }
 

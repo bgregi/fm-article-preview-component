@@ -1,6 +1,4 @@
-// referenciar elementos footers
-// criar evento onclick no share button
-// mudar propriedade display ficar alternando
+// This function alternates the Footers' displays between "none" and "flex" when the buttons are clicked
 
 function shareArticle() {
     let profileFooter = document.getElementById("profile")
@@ -12,9 +10,7 @@ function shareArticle() {
     } else {
         profileFooter.style.display = "flex"
         shareFooter.style.display = "none"
-    }    
-
-    console.log(profileFooter.style.maxHeight)
+    }
 }
 
 let profileButton = document.getElementById("profile-button")
