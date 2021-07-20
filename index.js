@@ -1,4 +1,5 @@
 // This function alternates the Footers' displays between "none" and "flex" when the buttons are clicked
+// It also changes the colors of the "share" button
 
 function shareArticle() {
     let profileFooter = document.getElementById("profile")

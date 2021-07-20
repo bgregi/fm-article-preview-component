@@ -61,7 +61,8 @@ main {
   justify-content: center;
   align-items: center;
 }
-.share .share-icons p, .share .share-icons img {
+.share .share-icons p,
+.share .share-icons img {
   padding-right: 10px;
 }
 
@@ -148,6 +149,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 40px;
+    position: relative;
   }
 
   .text h1 {
@@ -166,9 +168,34 @@ main {
   }
 
   .share {
+    display: none;
+    justify-content: center;
     position: absolute;
+    bottom: 110px;
+    left: 252px;
     height: 30px;
-    width: 100px;
+    width: 240px;
+    padding: 0;
+    border-radius: 10px;
+  }
+
+  .share:after {
+    content: "";
+    position: absolute;
+    top: 45px;
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #48556a;
+  }
+
+  #share-button {
+    display: none;
+  }
+
+  #pinterest {
+    padding: 0;
   }
 }
 
