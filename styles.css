@@ -64,12 +64,13 @@ main {
 .share .share-icons p, .share .share-icons img {
   padding-right: 10px;
 }
-.share .share-button {
+
+.share-button {
   background-color: #6d7f97;
   padding: 7.7px 8.5px;
   border-radius: 17.5px;
 }
-.share .share-button img {
+.share-button img {
   width: 18px;
 }
 
@@ -97,12 +98,13 @@ main {
 .profile .profile-main p {
   margin: 5px 20px;
 }
-.profile .share-button {
+
+.profile-button {
   background-color: #ecf2f8;
   padding: 7.7px 8.5px;
   border-radius: 17.5px;
 }
-.profile .share-button img {
+.profile-button img {
   width: 18px;
 }
 
@@ -116,24 +118,29 @@ main {
   color: #3e52a3;
 }
 
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 800px) {
+  html {
+    height: 100%;
+  }
+
   body {
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 150px 100px 100px 100px;
   }
 
   main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 680px;
-    height: 270px;
+    width: 730px;
+    height: 300px;
   }
 
   .drawers {
     border-radius: 10px 0 0 10px;
-    height: 270px;
-    width: 270px;
+    height: 300px;
+    width: 300px;
     object-position: 0 10%;
   }
 
@@ -145,10 +152,10 @@ main {
 
   .text h1 {
     font-size: 1.1rem;
-    padding: 0 0 20px 0;
+    padding: 0;
   }
   .text p {
-    padding: 0;
+    padding: 20px 0;
   }
 
   .profile {
@@ -156,6 +163,12 @@ main {
   }
   .profile .share-button {
     padding: 7.7px 8.5px;
+  }
+
+  .share {
+    position: absolute;
+    height: 30px;
+    width: 100px;
   }
 }
 

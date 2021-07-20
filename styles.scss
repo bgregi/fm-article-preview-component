@@ -84,14 +84,14 @@ main {
         }
     }
 
-    .share-button {
-        background-color: $darkblue;
-        padding: 7.7px 8.5px;
-        border-radius: 17.5px;
+}
+.share-button {
+    background-color: $darkblue;
+    padding: 7.7px 8.5px;
+    border-radius: 17.5px;
 
-        img {
-            width: 18px;
-        }
+    img {
+        width: 18px;
     }
 }
 
@@ -124,14 +124,15 @@ main {
     
     }
 
-    .share-button {
-        background-color: $l-grayblue;
-        padding: 7.7px 8.5px;
-        border-radius: 17.5px;
+}
 
-        img {
-            width: 18px;
-        }
+.profile-button {
+    background-color: $l-grayblue;
+    padding: 7.7px 8.5px;
+    border-radius: 17.5px;
+
+    img {
+        width: 18px;
     }
 }
 
@@ -145,25 +146,29 @@ main {
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 630px)  {
+@media only screen and (min-width: 800px)  {
+    html {
+        height: 100%;
+    }
 
     body {
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
+        padding: 150px 100px 100px 100px;
     }
 
     main {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 680px;
-        height: 270px;
+        width: 730px;
+        height: 300px;
     }
 
     .drawers {
         border-radius: 10px 0 0 10px;
-        height: 270px;
-        width: 270px;
+        height: 300px;
+        width: 300px;
         object-position: 0 10%;
     }
 
@@ -176,11 +181,11 @@ main {
     .text {
         h1 {
             font-size: 1.1rem;
-            padding: 0 0 20px 0;
+            padding: 0;
         }
 
         p {
-            padding: 0;
+            padding: 20px 0;
         }
 
     }
@@ -188,12 +193,15 @@ main {
     .profile {
         padding: 0;
 
-        // .profile-main {
-        // }
-
         .share-button {
             padding: 7.7px 8.5px;
         }
+    }
+
+    .share {
+        position: absolute;
+        height: 30px;
+        width: 100px;
     }
 
     
