@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/bgregi/article-preview-component](https://github.com/bgregi/article-preview-component)
-- Live Site URL: [https://bgregi.github.io/article-preview-component/](https://bgregi.github.io/article-preview-component/)
+- Solution URL: [https://github.com/bgregi/fm-article-preview-component](https://github.com/bgregi/fm-article-preview-component)
+- Live Site URL: [https://bgregi.github.io/fm-article-preview-component/](https://bgregi.github.io/fm-article-preview-component/)
 
 ## My process
 
